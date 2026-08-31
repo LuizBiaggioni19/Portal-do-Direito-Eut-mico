@@ -1,0 +1,22 @@
+{
+  "base_anterior": "aa72abe6898d329386b852f83e268f570c8010f9",
+  "head_no_passo_13": "e9d8096292643a5fd46829bfc1accb8fc33b0665",
+  "alteracoes_detectadas": [
+    {
+      "path": "Direito Eutímico/Atos Institucionais/AI 019.26.md",
+      "tipo": "adicionado",
+      "resumo": "Institui o Código de Relações Públicas."
+    },
+    {
+      "path": "Direito Eutímico/Atos Institucionais/AI 020.26.md",
+      "tipo": "adicionado",
+      "resumo": "Institui oficialmente o Repositório de Direito Eutímico e estabelece sua prevalência documental para Códigos."
+    },
+    {
+      "path": "Direito Eutímico/Códigos/Código Eleitoral.md",
+      "tipo": "adicionado",
+      "resumo": "Código Eleitoral republicado no acervo ativo em 30/08/2026."
+    }
+  ],
+  "nota": "O leitor é dinâmico e carrega o HEAD atual. O Livro de Alterações permanece com o commit-base próprio e o Portal informa quando houver divergência."
+}

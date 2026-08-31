@@ -1,0 +1,321 @@
+{
+  "versao": "1.0",
+  "data_base": "2026-08-30",
+  "commit_base": "aa72abe6898d329386b852f83e268f570c8010f9",
+  "natureza": "manual_tecnico_juridico_consolidacao_editorial",
+  "visoes": [
+    "ORIGINAL",
+    "VIGENTE",
+    "MULTIVIGENTE",
+    "RELACIONAL",
+    "HISTORICO"
+  ],
+  "status_permitidos": [
+    "VIGENTE",
+    "VIGENTE_COM_ALTERACOES",
+    "VIGENTE_COM_EXCECAO",
+    "VIGENTE_PARCIALMENTE",
+    "REVOGADO",
+    "CANCELADO",
+    "INCONSTITUCIONAL",
+    "EXAURIDO",
+    "SUPERADO",
+    "HISTORICO",
+    "SITUACAO_A_REVISAR"
+  ],
+  "regras": [
+    {
+      "id": "RC-001",
+      "titulo": "Imutabilidade do texto original",
+      "categoria": "integridade",
+      "regra": "O texto originalmente promulgado ou julgado não será reescrito, apagado ou substituído pela consolidação. Qualquer atualização ocorrerá apenas nas visões Vigente, Multivigente, Relacional ou Histórico.",
+      "fundamento_operacional": "Separação entre fonte histórica e consolidação editorial.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-002",
+      "titulo": "Consolidação não legisla",
+      "categoria": "competencia",
+      "regra": "A consolidação editorial apenas reflete efeito jurídico já produzido por autoridade competente, ato normativo válido ou decisão jurisdicional. O Portal não cria, extingue ou altera norma por iniciativa própria.",
+      "fundamento_operacional": "Distinção entre alteração normativa e consolidação editorial.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-003",
+      "titulo": "Âmbito interno e respeito ao direito brasileiro",
+      "categoria": "limites",
+      "regra": "Toda consolidação será apresentada como pertencente à ordem interna e comunitária eutímica, sem pretensão de afastar a legislação aplicável da República Federativa do Brasil.",
+      "fundamento_normativo": "Regras Fundamentais, arts. 1º, §3º, e 13, §2º.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-004",
+      "titulo": "Hierarquia normativa",
+      "categoria": "hierarquia",
+      "regra": "A análise de conflito observará a hierarquia vigente: DS e Princípios evocados; Princípios não evocados; AI; DD; Decreto-Lei; jurisprudência STE; jurisprudência TRFC; jurisprudência TRFs; Atos Ministeriais; Editos Provinciais.",
+      "fundamento_normativo": "Regras Fundamentais, art. 9º.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-005",
+      "titulo": "Primazia do Decreto Sapiencial",
+      "categoria": "hierarquia",
+      "regra": "Em conflito com Decreto Sapiencial, prevalece o Decreto Sapiencial, salvo se o próprio Poder Sapiencial dispuser de modo diverso.",
+      "fundamento_normativo": "Regras Fundamentais, art. 9º, §3º, e art. 8º.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-006",
+      "titulo": "Harmonia antes da incompatibilidade",
+      "categoria": "hermeneutica",
+      "regra": "Antes de reconhecer revogação tácita, derrogação ou não recepção, o sistema deverá buscar interpretação sistemática que permita a coexistência das normas.",
+      "fundamento_normativo": "Regras Fundamentais, art. 9º, §4º.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-007",
+      "titulo": "Especialidade",
+      "categoria": "hermeneutica",
+      "regra": "Norma especial prevalece na matéria que especificamente disciplina, desde que compatível com norma hierarquicamente superior.",
+      "fundamento_normativo": "Regras Fundamentais, art. 10, §3º, e art. 18, §2º.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-008",
+      "titulo": "Posterioridade",
+      "categoria": "hermeneutica",
+      "regra": "Entre normas de igual hierarquia, competência e especialidade, a norma posterior poderá prevalecer sobre a anterior na medida da incompatibilidade ou da alteração expressa.",
+      "fundamento_operacional": "Critério de consolidação temporal subordinado à hierarquia e especialidade.",
+      "automaticidade": "condicionada"
+    },
+    {
+      "id": "RC-009",
+      "titulo": "Código é lei",
+      "categoria": "leis_codigos",
+      "regra": "Código será tratado como lei codificada. Pode ser alterado, atualizado, reformado ou revogado, em ordem de autoridade, por DS, AI, DD ou Decreto-Lei.",
+      "fundamento_normativo": "Regras Fundamentais, art. 10 e §§1º-2º.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-010",
+      "titulo": "Limite bimestral de alteração material",
+      "categoria": "leis_codigos",
+      "regra": "Uma mesma lei ou Código não sofrerá alteração material por DD ou Decreto-Lei mais de uma vez a cada dois meses. DS e AI não estão sujeitos a essa limitação.",
+      "fundamento_normativo": "Regras Fundamentais, art. 11, §§1º-2º.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-011",
+      "titulo": "Consolidação não conta como alteração material",
+      "categoria": "leis_codigos",
+      "regra": "Republicação, consolidação, renumeração, atualização editorial ou correção material não contam como alteração legislativa, desde que não modifiquem o conteúdo jurídico.",
+      "fundamento_normativo": "Regras Fundamentais, art. 11, §3º.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-012",
+      "titulo": "Vedação de alteração material disfarçada",
+      "categoria": "integridade",
+      "regra": "É proibido usar correção, republicação ou consolidação editorial para introduzir mudança jurídica material sem fundamento normativo competente.",
+      "fundamento_normativo": "Regras Fundamentais, art. 11, §4º.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-013",
+      "titulo": "Revogação expressa",
+      "categoria": "efeitos",
+      "regra": "Quando ato posterior revogar expressamente ato ou dispositivo anterior, o alvo será marcado como REVOGADO a partir do momento definido pela norma, preservando-se o original.",
+      "automaticidade": "alta"
+    },
+    {
+      "id": "RC-014",
+      "titulo": "Revogação parcial e derrogação",
+      "categoria": "efeitos",
+      "regra": "A revogação parcial não elimina disposições autônomas compatíveis. O sistema consolidará apenas o alcance efetivamente atingido.",
+      "fundamento_normativo": "DS 110/2026, art. 12, parágrafo único.",
+      "automaticidade": "alta"
+    },
+    {
+      "id": "RC-015",
+      "titulo": "Revogação tácita somente por incompatibilidade inequívoca",
+      "categoria": "efeitos",
+      "regra": "Revogação tácita só será consolidada automaticamente quando a incompatibilidade material for inequívoca ou quando houver reconhecimento jurisdicional expresso. Cláusula genérica 'revogam-se as disposições em contrário' não autoriza presumir conflitos não demonstrados.",
+      "fundamento_normativo": "DS 110/2026, art. 12.",
+      "automaticidade": "condicionada"
+    },
+    {
+      "id": "RC-016",
+      "titulo": "Não recepção",
+      "categoria": "efeitos",
+      "regra": "Norma anterior incompatível com nova ordem fundamental poderá ser marcada como NÃO RECEPCIONADA apenas no alcance da incompatibilidade demonstrada, preservando atos e efeitos anteriores quando o ordenamento assim determinar.",
+      "automaticidade": "condicionada"
+    },
+    {
+      "id": "RC-017",
+      "titulo": "Repristinação",
+      "categoria": "efeitos",
+      "regra": "Repristinação somente será registrada quando expressamente determinada ou quando houver fundamento jurídico inequívoco no ato superveniente. O Portal não presumirá repristinação.",
+      "automaticidade": "condicionada"
+    },
+    {
+      "id": "RC-018",
+      "titulo": "Suspensão, caducidade e exaurimento",
+      "categoria": "temporal",
+      "regra": "Normas temporárias terão datas, condições e eventos de início e término registrados. Caducidade e exaurimento não serão rotulados como revogação quando se tratar apenas de término natural de eficácia.",
+      "automaticidade": "alta"
+    },
+    {
+      "id": "RC-019",
+      "titulo": "Retroatividade",
+      "categoria": "temporal",
+      "regra": "Efeito retroativo somente será aplicado quando decorrer expressamente do Poder Sapiencial, da própria norma ou de decisão jurisdicional com efeito retroativo reconhecido.",
+      "fundamento_normativo": "Regras Fundamentais, art. 8º, §3º.",
+      "automaticidade": "condicionada"
+    },
+    {
+      "id": "RC-020",
+      "titulo": "Efeitos jurisdicionais",
+      "categoria": "jurisprudencia",
+      "regra": "Decisões judiciais serão consolidadas conforme seu alcance: erga omnes, vinculante, inter partes, ex nunc ou ex tunc. Decisão de caso concreto não será convertida em revogação geral.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-021",
+      "titulo": "Súmulas",
+      "categoria": "jurisprudencia",
+      "regra": "Súmula será tratada como registro autônomo, com status próprio. Súmula cancelada permanece histórica, mas não produz força atual. Quando a Súmula declarar revogação ou interpretação de norma, a relação será registrada no ato atingido.",
+      "automaticidade": "alta"
+    },
+    {
+      "id": "RC-022",
+      "titulo": "Precedente superado",
+      "categoria": "jurisprudencia",
+      "regra": "Julgado cuja base normativa tenha sido posteriormente revogada ou substituída será preservado e marcado como PRECEDENTE SUPERADO, sem edição do teor da decisão.",
+      "automaticidade": "condicionada"
+    },
+    {
+      "id": "RC-023",
+      "titulo": "Referência histórica não é erro",
+      "categoria": "historico",
+      "regra": "Denominação, título, órgão ou diploma que era válido à época do ato não será reescrito retrospectivamente. O Portal apresentará alias ou nota histórica quando houver denominação atual superveniente.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-024",
+      "titulo": "Aliases e renumeração",
+      "categoria": "identidade",
+      "regra": "Atos renumerados ou renomeados manterão identificador canônico e aliases históricos. Uma referência só será resolvida automaticamente quando o alvo puder ser identificado sem ambiguidade.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-025",
+      "titulo": "Atos incorporados dentro de atos",
+      "categoria": "estrutura",
+      "regra": "Emendas, regulamentos, despachos, anexos normativos e aditamentos inseridos em um mesmo arquivo poderão ser indexados como sub-registros jurídicos próprios, vinculados ao documento-mãe.",
+      "automaticidade": "alta"
+    },
+    {
+      "id": "RC-026",
+      "titulo": "Referência órfã",
+      "categoria": "referencias",
+      "regra": "Quando ato citar diploma ou dispositivo não localizado no acervo, a referência será marcada como ÓRFÃ. Nenhum texto, número ou diploma será inventado para preencher a lacuna.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-027",
+      "titulo": "Remapeamento de artigos",
+      "categoria": "referencias",
+      "regra": "Referência a artigo de edição antiga de Código não será redirecionada automaticamente ao mesmo número da edição atual. Exige correspondência material entre institutos.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-028",
+      "titulo": "Graus de certeza",
+      "categoria": "auditoria",
+      "regra": "Toda consolidação terá grau de certeza: ALTA, MÉDIA ou BAIXA. Apenas efeitos expressos, jurisdicionalmente reconhecidos ou materialmente inequívocos podem ser aplicados automaticamente.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-029",
+      "titulo": "Fila de revisão jurídica",
+      "categoria": "auditoria",
+      "regra": "Conflitos, aliases ambíguos, revogações tácitas duvidosas, referências órfãs e correspondências incertas serão encaminhados à fila REVISÃO_JURÍDICA_NECESSÁRIA, sem modificação da versão vigente.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-030",
+      "titulo": "Livro de Alterações obrigatório",
+      "categoria": "auditoria",
+      "regra": "Toda consolidação efetivamente aplicada deverá gerar entrada no Livro de Alterações, contendo ID, data, alvo, dispositivo, estado anterior, fundamento, operação, resultado, natureza, fonte e grau de certeza.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-031",
+      "titulo": "Controle por commit e SHA",
+      "categoria": "versao",
+      "regra": "Toda indexação e consolidação deverá registrar commit-base do repositório e, quando disponível, SHA do arquivo. Mudança posterior deve ser tratada como nova versão ou delta.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-032",
+      "titulo": "Atualização incremental",
+      "categoria": "versao",
+      "regra": "Após o marco zero, atualizações do Portal deverão comparar o último commit indexado com o HEAD atual, analisando apenas arquivos novos, alterados, movidos ou removidos e os efeitos relacionais deles decorrentes.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-033",
+      "titulo": "Status de ato e status de dispositivo",
+      "categoria": "status",
+      "regra": "O sistema manterá status separado para o documento e para cada dispositivo relevante. Um ato pode permanecer vigente enquanto artigos específicos estejam revogados, exauridos, inconstitucionais ou superados.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-034",
+      "titulo": "Vocabulário de status",
+      "categoria": "status",
+      "regra": "Status permitidos incluem: VIGENTE, VIGENTE_COM_ALTERACOES, VIGENTE_COM_EXCECAO, VIGENTE_PARCIALMENTE, REVOGADO, CANCELADO, INCONSTITUCIONAL, EXAURIDO, SUPERADO, HISTORICO e SITUACAO_A_REVISAR.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-035",
+      "titulo": "Visões obrigatórias do leitor",
+      "categoria": "interface",
+      "regra": "Cada ato deverá oferecer, quando aplicável: ORIGINAL, VIGENTE, MULTIVIGENTE, RELACIONAL e HISTÓRICO. A visão Original nunca sofre consolidação textual.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-036",
+      "titulo": "Sigilo",
+      "categoria": "acesso",
+      "regra": "Processos ou documentos identificados como sigilosos devem possuir metadado de restrição e não terão conteúdo sensível publicado indiscriminadamente pelo Portal.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-037",
+      "titulo": "Fonte oficial prevalente",
+      "categoria": "fontes",
+      "regra": "Quando houver divergência entre cópia local, upload avulso e versão posteriormente sincronizada no repositório oficial, o Portal deverá identificar qual é a versão oficial vigente e conservar as demais apenas como fonte auxiliar ou histórica, salvo determinação expressa em contrário.",
+      "automaticidade": "obrigatoria"
+    },
+    {
+      "id": "RC-038",
+      "titulo": "Ausência de silêncio criativo",
+      "categoria": "integridade",
+      "regra": "Lacunas documentais, numeração ausente, texto truncado ou conflito de fontes serão explicitados. O sistema não completará silenciosamente normas ou decisões com inferência não documentada.",
+      "automaticidade": "obrigatoria"
+    }
+  ],
+  "workflow": [
+    "Fixar commit-base e inventariar arquivos alterados desde a última indexação.",
+    "Classificar espécie, número, data, autoridade, status documental e aliases.",
+    "Extrair referências normativas e jurisprudenciais.",
+    "Aplicar hierarquia, competência, especialidade, posterioridade e harmonia sistêmica.",
+    "Identificar efeitos expressos: alteração, revogação, derrogação, suspensão, repristinação, exceção, caducidade, exaurimento, inconstitucionalidade.",
+    "Separar efeitos certos de hipóteses que exigem revisão jurídica.",
+    "Gerar a visão Vigente e Multivigente sem alterar o Original.",
+    "Atualizar o grafo Relacional.",
+    "Registrar toda consolidação efetiva no Livro de Alterações.",
+    "Atualizar commit-base e SHAs da última indexação."
+  ]
+}

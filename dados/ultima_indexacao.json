@@ -1,0 +1,22 @@
+{
+  "versao": "1.0",
+  "data": "2026-08-30",
+  "repository": "dragaodotradicionalismo/Direito-Eutimico",
+  "branch": "main",
+  "commit": "e9d8096292643a5fd46829bfc1accb8fc33b0665",
+  "contagens": {
+    "total": 225,
+    "md": 222,
+    "pdf": 3,
+    "ds_active": 66,
+    "ds_revoked": 60,
+    "ai": 20,
+    "dd": 21,
+    "codes_active": 5
+  },
+  "observacoes": [
+    "Marco técnico do Passo 15.",
+    "O Portal consulta o HEAD atual em tempo de execução e compara mudanças posteriores com este marco.",
+    "O Livro de Alterações possui data-base própria e pode permanecer atrás do HEAD; a divergência é exibida."
+  ]
+}

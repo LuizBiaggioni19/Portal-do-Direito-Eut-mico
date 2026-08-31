@@ -1,0 +1,35 @@
+{
+  "nome": "Portal do Direito Eutímico",
+  "versao_portal": "15.0",
+  "fase": "versao_candidata_publicacao",
+  "repository": "dragaodotradicionalismo/Direito-Eutimico",
+  "branch": "main",
+  "commit_build": "e9d8096292643a5fd46829bfc1accb8fc33b0665",
+  "recursos": {
+    "busca_avancada": true,
+    "busca_texto_integral_sob_demanda": true,
+    "filtros": [
+      "tipo",
+      "status",
+      "ano",
+      "tribunal",
+      "categoria",
+      "somente_vigentes"
+    ],
+    "exportacao_resultados": [
+      "json",
+      "csv"
+    ],
+    "leitor_interno": true,
+    "visoes": [
+      "original",
+      "vigente",
+      "multivigente",
+      "relacional",
+      "historico"
+    ],
+    "auditoria_runtime": true,
+    "atualizacao_incremental": true,
+    "consulta_relacional": true
+  }
+}

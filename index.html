@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Portal do Direito Eutímico</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir ao conteúdo</a>
+
+  <header class="royal-strip">
+    <div class="shell royal-inner">
+      <div class="seal-placeholder" aria-label="Espaço reservado ao brasão oficial">
+        BRASÃO<br>OFICIAL
+      </div>
+      <div class="royal-text">
+        <div class="nation">PROVÍNCIAS UNIDAS DO REINO DA EUTIMIA</div>
+        <div class="motto">EUTIMIA PERPETUA ET DELICIA IUNCTA</div>
+      </div>
+      <div class="repo-state">
+        <span class="state-dot" aria-hidden="true"></span>
+        <span id="estadoRepositorio">Sincronizando acervo...</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="portal-head">
+    <div class="shell">
+      <div class="eyebrow">BIBLIOTECA JURÍDICA OFICIAL</div>
+      <h1>Portal do Direito Eutímico</h1>
+      <p>Legislação, jurisprudência, súmulas, estatutos, arquivo histórico e consolidação normativa.</p>
+    </div>
+  </section>
+
+  <nav class="main-nav" aria-label="Navegação principal">
+    <div class="shell nav-scroll" id="navPrincipal"></div>
+  </nav>
+
+  <main id="conteudo" class="shell main-layout">
+    <aside class="sidebar" aria-label="Filtros e coleções">
+      <section class="side-panel">
+        <h2>Consulta</h2>
+        <label class="field-label" for="busca">Pesquisa global</label>
+        <div class="search-row">
+          <input id="busca" type="search" placeholder="Ex.: DS 124, divórcio, HC 002..." autocomplete="off">
+          <button id="btnBuscar" class="icon-btn" aria-label="Pesquisar">⌕</button>
+        </div>
+
+        <div class="filter-grid">
+          <div>
+            <label class="field-label" for="filtroTipo">Espécie</label>
+            <select id="filtroTipo">
+              <option value="">Todas</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="filtroStatus">Status</label>
+            <select id="filtroStatus">
+              <option value="">Todos</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="filtroAno">Ano</label>
+            <select id="filtroAno">
+              <option value="">Todos</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="toggleAdvanced" class="ghost-btn">Pesquisa avançada</button>
+
+        <div id="advancedSearch" class="advanced-search hidden">
+          <div>
+            <label class="field-label" for="filtroTribunal">Tribunal/órgão</label>
+            <select id="filtroTribunal"><option value="">Todos</option></select>
+          </div>
+          <div>
+            <label class="field-label" for="filtroCategoria">Categoria</label>
+            <select id="filtroCategoria"><option value="">Todas</option></select>
+          </div>
+          <div>
+            <label class="field-label" for="ordenacao">Ordenação</label>
+            <select id="ordenacao">
+              <option value="legal_desc">Mais recentes/número</option>
+              <option value="titulo">Título A–Z</option>
+              <option value="ano_asc">Ano mais antigo</option>
+              <option value="ano_desc">Ano mais recente</option>
+            </select>
+          </div>
+          <label class="check-row"><input id="somenteVigentes" type="checkbox"> somente atos com eficácia atual</label>
+          <label class="check-row"><input id="buscaProfunda" type="checkbox"> pesquisar também no texto integral</label>
+          <div class="syntax-help">Operadores: <code>tipo:</code> <code>status:</code> <code>ano:</code> <code>tribunal:</code> <code>categoria:</code> <code>numero:</code> e frases entre aspas.</div>
+          <div id="searchProgress" class="search-progress"></div>
+        </div>
+
+        <button id="limparFiltros" class="ghost-btn">Limpar filtros</button>
+
+        <div class="export-row">
+          <button id="exportJson" class="mini-action">Exportar JSON</button>
+          <button id="exportCsv" class="mini-action">Exportar CSV</button>
+        </div>
+      </section>
+
+      <section class="side-panel">
+        <h2>Acesso rápido</h2>
+        <div id="atalhos" class="shortcut-list"></div>
+      </section>
+
+      <section class="side-panel compact">
+        <h2>Base documental</h2>
+        <dl class="meta-list">
+          <div><dt>Repositório</dt><dd>dragaodotradicionalismo/Direito-Eutimico</dd></div>
+          <div><dt>Branch</dt><dd>main</dd></div>
+          <div><dt>Commit carregado</dt><dd id="commitAtual">—</dd></div>
+          <div><dt>Arquivos</dt><dd id="totalArquivos">—</dd></div>
+        </dl>
+      </section>
+    </aside>
+
+    <section class="content-column">
+      <div id="breadcrumb" class="breadcrumb" aria-label="Caminho de navegação"></div>
+
+      <section id="home" class="home-view">
+        <div class="hero-search">
+          <div>
+            <span class="hero-kicker">CONSULTA NORMATIVA</span>
+            <h2>Encontre a norma e veja seu lugar no ordenamento.</h2>
+            <p>O Portal organiza o acervo por categoria jurídica, e não pela posição física do arquivo no GitHub.</p>
+          </div>
+          <div class="hero-actions">
+            <button class="primary-btn" data-action="colecao" data-value="legislacao">Explorar legislação</button>
+            <button class="secondary-btn" data-action="colecao" data-value="jurisprudencia">Ver jurisprudência</button>
+          </div>
+        </div>
+
+        <div id="controlWarning" class="control-warning hidden"></div>
+        <div id="updatePanel" class="update-panel hidden"></div>
+
+        <div id="collectionCards" class="collection-grid"></div>
+
+        <div class="two-columns">
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Normas recentes no acervo</h3>
+              <button class="link-btn" data-action="colecao" data-value="legislacao">ver todas</button>
+            </div>
+            <div id="recentes" class="item-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Situações jurídicas relevantes</h3>
+              <button class="link-btn" data-action="colecao" data-value="auditoria">auditoria</button>
+            </div>
+            <div id="alertasJuridicos" class="legal-alerts"></div>
+          </section>
+        </div>
+
+        <section class="panel views-panel">
+          <div class="panel-head"><h3>Como consultar cada ato</h3></div>
+          <div class="views-grid">
+            <div><strong>Original</strong><span>texto histórico imutável</span></div>
+            <div><strong>Vigente</strong><span>conteúdo atualmente aplicável</span></div>
+            <div><strong>Multivigente</strong><span>alterações e revogações marcadas</span></div>
+            <div><strong>Relacional</strong><span>quem altera e quem é alterado</span></div>
+            <div><strong>Histórico</strong><span>linha do tempo do ato</span></div>
+          </div>
+        </section>
+      </section>
+
+      <section id="listView" class="list-view hidden">
+        <div class="page-head">
+          <div>
+            <span id="pageKicker" class="eyebrow"></span>
+            <h2 id="pageTitle"></h2>
+            <p id="pageDescription"></p>
+          </div>
+          <div class="result-counter"><strong id="resultCount">0</strong><span>itens</span></div>
+        </div>
+
+        <div id="activeFilters" class="active-filters"></div>
+        <div id="results" class="results"></div>
+      </section>
+
+      <section id="auditView" class="audit-view hidden">
+        <div class="page-head">
+          <div>
+            <span class="eyebrow">CONSOLIDAÇÃO E AUDITORIA</span>
+            <h2>Livro de Alterações</h2>
+            <p>Registro das consolidações editoriais e das pendências que exigem revisão jurídica.</p>
+          </div>
+        </div>
+        <div class="audit-summary" id="auditSummary"></div>
+        <section class="panel technical-audit-panel">
+          <div class="panel-head">
+            <h3>Auditoria técnica do Portal</h3>
+            <button id="runAudit" class="link-btn">executar auditoria</button>
+          </div>
+          <div id="technicalAudit" class="technical-audit">
+            <p>Verifica integridade dos paths relacionais, bases de controle e consistência do índice carregado.</p>
+          </div>
+        </section>
+
+        <div class="two-columns audit-columns">
+          <section class="panel">
+            <div class="panel-head"><h3>Alterações consolidadas</h3></div>
+            <div id="auditEntries" class="audit-list"></div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h3>Pendências jurídicas</h3></div>
+            <div id="auditPending" class="audit-list"></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="detailView" class="detail-view hidden">
+        <button id="backButton" class="back-btn">← Voltar aos resultados</button>
+        <div class="document-card">
+          <div class="document-head">
+            <div>
+              <span id="detailType" class="eyebrow"></span>
+              <h2 id="detailTitle"></h2>
+              <div id="detailBadges" class="badges"></div>
+            </div>
+          </div>
+          <div class="detail-grid">
+            <dl id="detailMeta" class="detail-meta"></dl>
+            <div class="source-box">
+              <h3>Fonte oficial</h3>
+              <p id="detailSummary">Carregando identificação material do documento...</p>
+              <a id="detailSource" class="primary-link" target="_blank" rel="noopener">Abrir fonte no GitHub</a>
+            </div>
+          </div>
+
+          <div class="reader-toolbar">
+            <div class="reader-tabs" id="readerTabs" role="tablist" aria-label="Visões jurídicas">
+              <button class="active" data-view="original" role="tab">Original</button>
+              <button data-view="vigente" role="tab">Vigente</button>
+              <button data-view="multivigente" role="tab">Multivigente</button>
+              <button data-view="relacional" role="tab">Relacional</button>
+              <button data-view="historico" role="tab">Histórico</button>
+            </div>
+            <div class="reader-tools">
+              <label for="readerFind">Localizar</label>
+              <input id="readerFind" type="search" placeholder="termo no documento">
+              <button id="readerFindBtn" class="ghost-btn small-btn">Buscar</button>
+            </div>
+          </div>
+
+          <div id="readerNotice" class="reader-notice hidden"></div>
+          <div id="readerLoading" class="reader-loading hidden">Carregando conteúdo jurídico...</div>
+          <article id="readerContent" class="reader-content" aria-live="polite"></article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div>
+        <strong>Portal do Direito Eutímico</strong>
+        <p>Sistema de consulta, consolidação e memória normativa.</p>
+      </div>
+      <div class="footer-note">
+        A consolidação editorial não altera o texto original dos atos.
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript">Este Portal necessita de JavaScript para carregar e classificar o acervo do repositório.</div>
+  </noscript>
+
+  <script src="portal.js"></script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+{
+  "versao": "1.0",
+  "data_consolidacao": "2026-08-30",
+  "commit_base": "aa72abe6898d329386b852f83e268f570c8010f9",
+  "natureza": "consolidacao_editorial",
+  "entradas": [
+    {
+      "id": "LA-0001/2026",
+      "alvo": "Constituição anteriormente vigente",
+      "dispositivo": "integral",
+      "operacao": "REVOGAÇÃO TOTAL",
+      "fundamento": "DS 110/2026, arts. 2º e 25",
+      "resultado": "REVOGADA / HISTÓRICA",
+      "natureza": "consolidação editorial de revogação normativa expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 110.26.md"
+      ]
+    },
+    {
+      "id": "LA-0002/2026",
+      "alvo": "DS 110/2026",
+      "dispositivo": "Princípios Fundamentais",
+      "operacao": "ALTERAÇÃO / ACRÉSCIMO",
+      "fundamento": "DS 111/2026, art. 1º",
+      "resultado": "Acrescido o princípio X — Honra Leal",
+      "natureza": "consolidação editorial de alteração normativa expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 111.26.md"
+      ]
+    },
+    {
+      "id": "LA-0003/2026",
+      "alvo": "DS 85/2026",
+      "dispositivo": "integral",
+      "operacao": "REVOGAÇÃO TOTAL",
+      "fundamento": "DS 86/2026, art. 4º, conforme Súmula 12 do STE",
+      "resultado": "REVOGADO",
+      "natureza": "consolidação editorial fundada em ato superveniente e jurisprudência",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Ministério da Justiça/STE/Súmula da Jurisprudência.md"
+      ]
+    },
+    {
+      "id": "LA-0004/2026",
+      "alvo": "AI 001/2026",
+      "dispositivo": "art. 1º",
+      "operacao": "REVOGAÇÃO COM EFEITOS REPRISTINATÓRIOS",
+      "fundamento": "AI 007/2026, art. 1º",
+      "resultado": "Art. 1º revogado, com registro dos efeitos repristinatórios",
+      "natureza": "consolidação editorial de revogação expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Atos Institucionais/AI 007.26.md"
+      ]
+    },
+    {
+      "id": "LA-0005/2026",
+      "alvo": "Código Eleitoral",
+      "dispositivo": "integral",
+      "operacao": "REVOGAÇÃO TOTAL",
+      "fundamento": "AI 011/2026, art. 1º",
+      "resultado": "REVOGADO INTEGRALMENTE / HISTÓRICO",
+      "natureza": "consolidação editorial de revogação normativa expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Atos Institucionais/AI 011.26.md"
+      ]
+    },
+    {
+      "id": "LA-0006/2026",
+      "alvo": "AI 012/2026",
+      "dispositivo": "art. 1º, V; art. 7º; art. 10, III (quanto aos TJs); art. 10, V",
+      "operacao": "SUPERVENIÊNCIA / EXTINÇÃO INSTITUCIONAL",
+      "fundamento": "AI 015/2026, art. 1º",
+      "resultado": "Referências aos Tribunais de Justiça sem eficácia atual; competência concentrada nos TRFs",
+      "natureza": "consolidação editorial de superveniência normativa expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Atos Institucionais/AI 012.26.md",
+        "Direito Eutímico/Atos Institucionais/AI 015.26.md"
+      ]
+    },
+    {
+      "id": "LA-0007/2026",
+      "alvo": "AI 013/2026",
+      "dispositivo": "art. 2º, III",
+      "operacao": "PERDA DE OBJETO / SUPERVENIÊNCIA",
+      "fundamento": "AI 015/2026, art. 1º",
+      "resultado": "Dispositivo sem objeto na estrutura judicial atual, sem reescrita automática",
+      "natureza": "consolidação editorial",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Atos Institucionais/AI 013.26.md",
+        "Direito Eutímico/Atos Institucionais/AI 015.26.md"
+      ]
+    },
+    {
+      "id": "LA-0008/2026",
+      "alvo": "AI 012/2026",
+      "dispositivo": "art. 14",
+      "operacao": "EXAURIMENTO",
+      "fundamento": "Publicação do Código de Processo Eutímico em 24/08/2026",
+      "resultado": "EFICÁCIA EXAURIDA EM 24/08/2026",
+      "natureza": "consolidação editorial de condição temporal implementada",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Atos Institucionais/AI 012.26.md",
+        "Direito Eutímico/Códigos/Código de Processo Eutímico.md"
+      ]
+    },
+    {
+      "id": "LA-0009/2026",
+      "alvo": "AI 015/2026",
+      "dispositivo": "art. 8º",
+      "operacao": "EXAURIMENTO",
+      "fundamento": "Publicação do Código de Processo Eutímico em 24/08/2026",
+      "resultado": "EFICÁCIA EXAURIDA EM 24/08/2026",
+      "natureza": "consolidação editorial de condição temporal implementada",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Atos Institucionais/AI 015.26.md",
+        "Direito Eutímico/Códigos/Código de Processo Eutímico.md"
+      ]
+    },
+    {
+      "id": "LA-0010/2026",
+      "alvo": "Código Civil",
+      "dispositivo": "arts. 54 a 58",
+      "operacao": "REVOGAÇÃO TOTAL DOS DISPOSITIVOS SOBRE DIVÓRCIO",
+      "fundamento": "Emenda nº 01 ao DS 120/2026, art. 2º",
+      "resultado": "Arts. 54 a 58 revogados na visão vigente; preservados no original e multivigente",
+      "natureza": "consolidação editorial de revogação normativa expressa e abrangente",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Códigos/Código Civil.md",
+        "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      ]
+    },
+    {
+      "id": "LA-0011/2026",
+      "alvo": "DS 95/2026",
+      "dispositivo": "art. 4º e art. 56-A, inclusive parágrafos e incisos",
+      "operacao": "REVOGAÇÃO MATERIAL",
+      "fundamento": "Emenda nº 01 ao DS 120/2026, art. 2º",
+      "resultado": "Bloco normativo sobre divórcio revogado; demais dispositivos preservados",
+      "natureza": "consolidação editorial por incompatibilidade material inequívoca",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 95.26.md",
+        "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      ]
+    },
+    {
+      "id": "LA-0012/2026",
+      "alvo": "DS 87C/2026",
+      "dispositivo": "arts. 37 a 40",
+      "operacao": "REVOGAÇÃO TOTAL/PARCIAL EM MATÉRIA DE DIVÓRCIO",
+      "fundamento": "Emenda nº 01 ao DS 120/2026, art. 2º",
+      "resultado": "Arts. 37 e 38 revogados; arts. 39 e 40 derrogados apenas quanto ao divórcio",
+      "natureza": "consolidação editorial",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 87C.26.md",
+        "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      ]
+    },
+    {
+      "id": "LA-0013/2026",
+      "alvo": "AI 014/2026",
+      "dispositivo": "vedação de ingresso de estrangeiros",
+      "operacao": "EXCEÇÃO NORMATIVA",
+      "fundamento": "Emenda nº 03 ao DS 120/2026, arts. 1º e 2º",
+      "resultado": "Exceção pessoal, excepcional e intransferível para Amigos de Longa Data convidados expressamente",
+      "natureza": "consolidação editorial de exceção normativa expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      ]
+    },
+    {
+      "id": "LA-0014/2026",
+      "alvo": "DS 101/2026",
+      "dispositivo": "arts. 1º a 5º e respectivos parágrafos",
+      "operacao": "REVOGAÇÃO TÁCITA JURISPRUDENCIALMENTE RECONHECIDA",
+      "fundamento": "Súmula 40 do STE",
+      "resultado": "Dispositivos revogados",
+      "natureza": "consolidação editorial fundada em enunciado do STE",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Ministério da Justiça/STE/Súmula da Jurisprudência.md"
+      ]
+    },
+    {
+      "id": "LA-0015/2026",
+      "alvo": "DS 101/2026",
+      "dispositivo": "art. 6º quanto ao caráter de partido único; art. 8º",
+      "operacao": "REVOGAÇÃO DO REGIME DE PARTIDO ÚNICO",
+      "fundamento": "DS 108/2026, arts. 1º, 2º, 3º e 11; Súmula 45 quanto à filiação eleitoral",
+      "resultado": "PPE permanece existente sem exclusividade; art. 8º revogado; art. 7º não pode gerar exigência eleitoral de filiação",
+      "natureza": "consolidação editorial",
+      "certeza": "alta para o regime de partido único; média-alta para o alcance residual do art. 7º",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 101.26.md",
+        "Direito Eutímico/Decretos Sapienciais/DS 108.26.md",
+        "Direito Eutímico/Ministério da Justiça/STE/Súmula da Jurisprudência.md"
+      ]
+    },
+    {
+      "id": "LA-0016/2026",
+      "alvo": "DS 87C/2026",
+      "dispositivo": "arts. 5º, 7º e 18, sem prejuízo de outras incompatibilidades",
+      "operacao": "DERROGAÇÃO POR INCOMPATIBILIDADE MATERIAL",
+      "fundamento": "DS 124/2026, nova ordem nobiliárquica e cláusula de revogação das disposições incompatíveis",
+      "resultado": "Antiga gradação deixa de representar a ordem de precedência vigente",
+      "natureza": "consolidação editorial",
+      "certeza": "alta quanto à antiga ordem de precedência",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 87C.26.md",
+        "Direito Eutímico/Decretos Sapienciais/DS 124.26.md"
+      ]
+    },
+    {
+      "id": "LA-0017/2026",
+      "alvo": "Denominação Reverendíssimo Primus Fundatoris",
+      "dispositivo": "denominação nobiliárquica",
+      "operacao": "SUBSTITUIÇÃO TERMINOLÓGICA",
+      "fundamento": "DS 124/2026, art. 21",
+      "resultado": "Denominação corrente: Grão-Régio Fundador; referências históricas preservadas",
+      "natureza": "consolidação editorial de alteração terminológica expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 124.26.md"
+      ]
+    },
+    {
+      "id": "LA-0018/2026",
+      "alvo": "DS 86/2026",
+      "dispositivo": "estrutura do antigo Super Ministério Público da Verdade",
+      "operacao": "REFORMA / RENOMEAÇÃO / ALTERAÇÃO DE VINCULAÇÃO",
+      "fundamento": "DS 123/2026, arts. 1º a 4º",
+      "resultado": "Órgão renomeado para SMIC, fora do Ministério Público e vinculado ao Poder Sapiencial",
+      "natureza": "consolidação editorial de reforma normativa expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 123.26.md"
+      ]
+    },
+    {
+      "id": "LA-0019/2026",
+      "alvo": "DEL 001/2026",
+      "dispositivo": "art. 3º, I",
+      "operacao": "DECLARAÇÃO DE INCONSTITUCIONALIDADE",
+      "fundamento": "STE — ADIN 001/2026",
+      "resultado": "Dispositivo inconstitucional / sem aplicação",
+      "natureza": "consolidação editorial de efeito jurisdicional",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Ministério da Justiça/STE/Autos/STE ADIN 001.26.md"
+      ]
+    },
+    {
+      "id": "LA-0020/2026",
+      "alvo": "DEL 007/2026",
+      "dispositivo": "integral",
+      "operacao": "INCONSTITUCIONALIDADE TOTAL EX TUNC + REVOGAÇÃO POSTERIOR",
+      "fundamento": "STE — AP 002/2026; posteriormente DEL 020/2026, art. 1º",
+      "resultado": "Inconstitucional com efeitos ex tunc e também revogado expressamente",
+      "natureza": "consolidação editorial de efeitos jurisdicional e normativo cumulativos",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Ministério da Justiça/STE/Autos/STE AP 002.26.md",
+        "Direito Eutímico/Decretos Deliciais/DEL 020.26.md"
+      ]
+    },
+    {
+      "id": "LA-0021/2026",
+      "alvo": "DEL 002/2026",
+      "dispositivo": "integral",
+      "operacao": "REVOGAÇÃO TOTAL",
+      "fundamento": "DEL 018/2026, art. 1º",
+      "resultado": "REVOGADO",
+      "natureza": "consolidação editorial de revogação expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Decretos Deliciais/DEL 018.26.md"
+      ]
+    },
+    {
+      "id": "LA-0022/2026",
+      "alvo": "DEL 003/2026",
+      "dispositivo": "integral",
+      "operacao": "REVOGAÇÃO TOTAL",
+      "fundamento": "DEL 019/2026, art. 1º",
+      "resultado": "REVOGADO",
+      "natureza": "consolidação editorial de revogação expressa",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Decretos Deliciais/DEL 019.26.md"
+      ]
+    },
+    {
+      "id": "LA-0023/2026",
+      "alvo": "DEL originalmente nº 088/2026, armazenado sob DEL 010.26.md",
+      "dispositivo": "integral",
+      "operacao": "REVOGAÇÃO TOTAL",
+      "fundamento": "DEL 014/2026, art. 1º",
+      "resultado": "REVOGADO, preservado o alias histórico de numeração",
+      "natureza": "consolidação editorial de revogação expressa com controle de alias",
+      "certeza": "alta quanto ao ato original nº 088/2026",
+      "fontes": [
+        "Direito Eutímico/Decretos Deliciais/DEL 014.26.md"
+      ]
+    },
+    {
+      "id": "LA-0024/2026",
+      "alvo": "DS 76/2025",
+      "dispositivo": "preâmbulo constitucional; art. 1º, I; art. 5º, II e parágrafo; art. 6º, naquilo que dependem da antiga Constituição/Conselho Arquiducal",
+      "operacao": "NÃO RECEPÇÃO / SUPERVENIÊNCIA CONSTITUCIONAL",
+      "fundamento": "DS 110/2026, arts. 2º, 12, 13, 25, 26 e 29",
+      "resultado": "Referências incompatíveis à antiga Constituição marcadas como superadas/não recepcionadas",
+      "natureza": "consolidação editorial por incompatibilidade material",
+      "certeza": "alta quanto às referências expressamente incompatíveis",
+      "fontes": [
+        "Direito Eutímico/Decretos Sapienciais/DS 76.25.md",
+        "Direito Eutímico/Decretos Sapienciais/DS 110.26.md"
+      ]
+    },
+    {
+      "id": "LA-0025/2026",
+      "alvo": "STE AIC 004/2026",
+      "dispositivo": "teses e precedentes relativos ao regime do divórcio",
+      "operacao": "SUPERAÇÃO NORMATIVA SUPERVENIENTE",
+      "fundamento": "Emenda nº 01 ao DS 120/2026, art. 2º",
+      "resultado": "Precedente preservado historicamente, mas superado quanto ao regime do divórcio desde 24/08/2026",
+      "natureza": "nota de atualização jurisprudencial",
+      "certeza": "alta",
+      "fontes": [
+        "Direito Eutímico/Ministério da Justiça/STE/Autos/STE AIC 004.26.md",
+        "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      ]
+    }
+  ],
+  "pendencias": [
+    {
+      "id": "PEND-001",
+      "tema": "Súmula 36 do STE",
+      "motivo": "A referência ao art. 39 do Código de Processo não corresponde com segurança a nenhuma edição localizada."
+    },
+    {
+      "id": "PEND-002",
+      "tema": "DS 118/2026 — Novo Código Eleitoral",
+      "motivo": "Invoca arts. 9º a 11 de diploma não localizado no acervo ativo."
+    },
+    {
+      "id": "PEND-003",
+      "tema": "DEL 021/2026 — DEL 010/2026",
+      "motivo": "Alvo ambíguo diante da renumeração retroativa dos Decretos Deliciais."
+    },
+    {
+      "id": "PEND-004",
+      "tema": "AI 011/2026 × AI 012/2026 — TSE",
+      "motivo": "O AI 011 extinguiu o TSE e o AI 012 voltou a incluí-lo e atribuir-lhe competência; qualificação exata reservada à revisão jurídica."
+    },
+    {
+      "id": "PEND-005",
+      "tema": "Decisões antigas × Código de Processo atual",
+      "motivo": "A numeração não deve ser remapeada para o CPE atual sem tabela de correspondência material."
+    }
+  ]
+}

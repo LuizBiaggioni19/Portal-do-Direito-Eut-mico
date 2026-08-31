@@ -1,0 +1,862 @@
+{
+  "version": "1.0",
+  "commit_base": "e9d8096292643a5fd46829bfc1accb8fc33b0665",
+  "codes": {
+    "ALT": {
+      "label": "Altera",
+      "class": "rel-alt"
+    },
+    "REV": {
+      "label": "Revoga",
+      "class": "rel-rev"
+    },
+    "DER": {
+      "label": "Derroga",
+      "class": "rel-der"
+    },
+    "INT": {
+      "label": "Interpreta",
+      "class": "rel-int"
+    },
+    "EXC": {
+      "label": "Excepciona",
+      "class": "rel-exc"
+    },
+    "REP": {
+      "label": "Repristina/Reativa",
+      "class": "rel-rep"
+    },
+    "JUD": {
+      "label": "Efeito jurisdicional",
+      "class": "rel-jud"
+    },
+    "SUP": {
+      "label": "Supera",
+      "class": "rel-sup"
+    },
+    "EXA": {
+      "label": "Exaure",
+      "class": "rel-exa"
+    },
+    "REN": {
+      "label": "Renomeia",
+      "class": "rel-ren"
+    },
+    "CIT": {
+      "label": "Cita/Fundamenta",
+      "class": "rel-cit"
+    },
+    "PRE": {
+      "label": "Preserva/Recepciona",
+      "class": "rel-pre"
+    },
+    "CAD": {
+      "label": "Caducidade",
+      "class": "rel-cad"
+    },
+    "REV?": {
+      "label": "Relação a revisar",
+      "class": "rel-review"
+    }
+  },
+  "edges": [
+    {
+      "id": "REL-0001",
+      "year": "2026",
+      "code": "ALT",
+      "source": {
+        "label": "DS 111/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 111.26.md"
+      },
+      "target": {
+        "label": "DS 110/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 110.26.md"
+      },
+      "scope": "Princípios Fundamentais",
+      "basis": "DS 111/2026, art. 1º",
+      "summary": "Acrescenta o princípio X — Honra Leal.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0002",
+      "year": "2026",
+      "code": "INT",
+      "source": {
+        "label": "DS 115/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 115.26.md"
+      },
+      "target": {
+        "label": "DS 114/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 114.26.md"
+      },
+      "scope": "alcance jurídico do ato",
+      "basis": "DS 115/2026",
+      "summary": "Delimita e incorpora interpretação restritiva do DS 114/2026.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0003",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "AI 011/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 011.26.md"
+      },
+      "target": {
+        "label": "Código Eleitoral — 1ª edição",
+        "kind": "documento",
+        "path": "Direito Eutímico/Arquivo - Inativos/Código Eleitoral 1ed.md"
+      },
+      "scope": "integral",
+      "basis": "AI 011/2026, art. 1º",
+      "summary": "Revoga integralmente a edição anterior do Código Eleitoral.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0004",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "AI 011/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 011.26.md"
+      },
+      "target": {
+        "label": "Tribunal Sapiencial Eleitoral",
+        "kind": "orgao"
+      },
+      "scope": "estrutura institucional",
+      "basis": "AI 011/2026, art. 2º",
+      "summary": "Extingue o TSE então existente.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0005",
+      "year": "2026",
+      "code": "REV?",
+      "source": {
+        "label": "AI 012/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 012.26.md"
+      },
+      "target": {
+        "label": "Extinção do TSE pelo AI 011/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 011.26.md"
+      },
+      "scope": "estrutura institucional",
+      "basis": "AI 012/2026",
+      "summary": "Volta a prever o Tribunal Sapiencial Eleitoral e lhe atribui competência; qualificação exata da superveniência fica em revisão.",
+      "confidence": "media"
+    },
+    {
+      "id": "REL-0006",
+      "year": "2026",
+      "code": "PRE",
+      "source": {
+        "label": "DS 119/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 119.26.md"
+      },
+      "target": {
+        "label": "AI 011/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 011.26.md"
+      },
+      "scope": "proclamação e diplomação",
+      "basis": "DS 119/2026",
+      "summary": "Reconhece o AI 011 e preserva efeitos específicos da proclamação/diplomação.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0007",
+      "year": "2026",
+      "code": "EXC",
+      "source": {
+        "label": "DS 120/2026 — Emenda nº 03",
+        "kind": "subato",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      },
+      "target": {
+        "label": "AI 014/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 014.26.md"
+      },
+      "scope": "ingresso de estrangeiros",
+      "basis": "Emenda nº 03 ao DS 120/2026",
+      "summary": "Cria exceção pessoal para Amigos de Longa Data convidados expressamente.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0008",
+      "year": "2026",
+      "code": "JUD",
+      "source": {
+        "label": "TRF-1 HC 002/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Ministério da Justiça/TRF-1/Autos/TRF-1 HC 002.26.md"
+      },
+      "target": {
+        "label": "DS 120/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      },
+      "scope": "art. 1º, caso concreto",
+      "basis": "TRF-1 HC 002/2026",
+      "summary": "Afasta, no caso concreto, interpretação impeditiva da edição de novos DS.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0009",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "Súmula 12 do STE",
+        "kind": "documento",
+        "itemId": "sumula:12"
+      },
+      "target": {
+        "label": "DS 85/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 85.26.md"
+      },
+      "scope": "integral",
+      "basis": "Súmula 12",
+      "summary": "Reconhece que o DS 86/2026, art. 4º, revogou o DS 85/2026.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0010",
+      "year": "2026",
+      "code": "REP",
+      "source": {
+        "label": "DS 88/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 88.26.md"
+      },
+      "target": {
+        "label": "DS 43B/2025",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 43B.25.md"
+      },
+      "scope": "vigência",
+      "basis": "DS 88/2026",
+      "summary": "Reativa o regime do DS 43/2025.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0011",
+      "year": "2026",
+      "code": "PRE",
+      "source": {
+        "label": "DS 91/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 91.26.md"
+      },
+      "target": {
+        "label": "DS 43B/2025",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 43B.25.md"
+      },
+      "scope": "perenidade",
+      "basis": "DS 91/2026",
+      "summary": "Estabelece perenidade do regime associado ao DS 43.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0012",
+      "year": "2026",
+      "code": "INT",
+      "source": {
+        "label": "Súmula 37 do STE",
+        "kind": "documento",
+        "itemId": "sumula:37"
+      },
+      "target": {
+        "label": "DS 43B/2025",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 43B.25.md"
+      },
+      "scope": "irrevogabilidade/perenidade",
+      "basis": "Súmula 37",
+      "summary": "Interpreta o DS 43/25 como irrevogável e de efeitos permanentes.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0013",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "AI 007/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 007.26.md"
+      },
+      "target": {
+        "label": "AI 001/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 001.26.md"
+      },
+      "scope": "art. 1º",
+      "basis": "AI 007/2026, art. 1º",
+      "summary": "Revoga o art. 1º do AI 001/2026.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0014",
+      "year": "2026",
+      "code": "REP",
+      "source": {
+        "label": "AI 007/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 007.26.md"
+      },
+      "target": {
+        "label": "Efeitos anteriores ao AI 001/2026",
+        "kind": "efeito"
+      },
+      "scope": "efeitos atingidos pelo art. 1º",
+      "basis": "AI 007/2026, art. 1º",
+      "summary": "Produz efeitos repristinatórios expressamente declarados.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0015",
+      "year": "2026",
+      "code": "INT",
+      "source": {
+        "label": "Súmula 43 do STE",
+        "kind": "documento",
+        "itemId": "sumula:43"
+      },
+      "target": {
+        "label": "AI 001/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 001.26.md"
+      },
+      "scope": "art. 3º",
+      "basis": "Súmula 43",
+      "summary": "Interpreta a prevalência do art. 3º sobre disposição contrária do Código Penal.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0016",
+      "year": "2026",
+      "code": "ALT",
+      "source": {
+        "label": "AI 015/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 015.26.md"
+      },
+      "target": {
+        "label": "AI 012/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 012.26.md"
+      },
+      "scope": "Tribunais de Justiça / competências",
+      "basis": "AI 015/2026, art. 1º",
+      "summary": "Extingue os Tribunais de Justiça provinciais e concentra competências nos TRFs.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0017",
+      "year": "2026",
+      "code": "SUP",
+      "source": {
+        "label": "AI 015/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 015.26.md"
+      },
+      "target": {
+        "label": "AI 013/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 013.26.md"
+      },
+      "scope": "art. 2º, III",
+      "basis": "AI 015/2026, art. 1º",
+      "summary": "A definição de Juízes Provinciais ligada aos TJs perde objeto.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0018",
+      "year": "2026",
+      "code": "EXA",
+      "source": {
+        "label": "Código de Processo Eutímico",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código de Processo Eutímico.md"
+      },
+      "target": {
+        "label": "AI 012/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 012.26.md"
+      },
+      "scope": "art. 14",
+      "basis": "Publicação do CPE em 24/08/2026",
+      "summary": "Implementa a condição que exaure a regra transitória.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0019",
+      "year": "2026",
+      "code": "EXA",
+      "source": {
+        "label": "Código de Processo Eutímico",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código de Processo Eutímico.md"
+      },
+      "target": {
+        "label": "AI 015/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 015.26.md"
+      },
+      "scope": "art. 8º",
+      "basis": "Publicação do CPE em 24/08/2026",
+      "summary": "Implementa a condição que exaure a regra transitória.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0020",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "DEL 018/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Deliciais/DEL 018.26.md"
+      },
+      "target": {
+        "label": "DEL 002/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Deliciais/DEL 002.26.md"
+      },
+      "scope": "integral",
+      "basis": "DEL 018/2026, art. 1º",
+      "summary": "Revoga integralmente o DEL 002/2026.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0021",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "DEL 019/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Deliciais/DEL 019.26.md"
+      },
+      "target": {
+        "label": "DEL 003/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Deliciais/DEL 003.26.md"
+      },
+      "scope": "integral",
+      "basis": "DEL 019/2026, art. 1º",
+      "summary": "Revoga integralmente o DEL 003/2026.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0022",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "DEL 020/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Deliciais/DEL 020.26.md"
+      },
+      "target": {
+        "label": "DEL 007/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Deliciais/DEL 007.26.md"
+      },
+      "scope": "integral",
+      "basis": "DEL 020/2026, art. 1º",
+      "summary": "Revoga expressamente o DEL 007/2026.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0023",
+      "year": "2026",
+      "code": "JUD",
+      "source": {
+        "label": "STE AP 002/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Ministério da Justiça/STE/Autos/STE AP 002.26.md"
+      },
+      "target": {
+        "label": "DEL 007/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Deliciais/DEL 007.26.md"
+      },
+      "scope": "integral",
+      "basis": "STE AP 002/2026",
+      "summary": "Declara inconstitucionalidade com efeitos ex tunc.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0024",
+      "year": "2026",
+      "code": "JUD",
+      "source": {
+        "label": "STE ADIN 001/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Ministério da Justiça/STE/Autos/STE ADIN 001.26.md"
+      },
+      "target": {
+        "label": "DEL 001/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Deliciais/DEL 001.26.md"
+      },
+      "scope": "art. 3º, I",
+      "basis": "STE ADIN 001/2026",
+      "summary": "Declara inconstitucional o art. 3º, I.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0025",
+      "year": "2026",
+      "code": "ALT",
+      "source": {
+        "label": "DS 123/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 123.26.md"
+      },
+      "target": {
+        "label": "DS 86/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 86.26.md"
+      },
+      "scope": "estrutura do órgão",
+      "basis": "DS 123/2026, arts. 1º–4º",
+      "summary": "Reforma o antigo Super Ministério Público da Verdade e sua vinculação.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0026",
+      "year": "2026",
+      "code": "REN",
+      "source": {
+        "label": "DS 123/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 123.26.md"
+      },
+      "target": {
+        "label": "Super Ministério Público da Verdade",
+        "kind": "instituto"
+      },
+      "scope": "denominação e vinculação",
+      "basis": "DS 123/2026",
+      "summary": "Renomeia o órgão para SMIC e o vincula ao Poder Sapiencial.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0027",
+      "year": "2026",
+      "code": "DER",
+      "source": {
+        "label": "DS 124/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 124.26.md"
+      },
+      "target": {
+        "label": "DS 87C/2026 — antigo Estatuto da Nobreza",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 87C.26.md"
+      },
+      "scope": "ordem de precedência e disposições incompatíveis",
+      "basis": "DS 124/2026",
+      "summary": "Substitui a ordem nobiliárquica anterior e derroga disposições incompatíveis.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0028",
+      "year": "2026",
+      "code": "REN",
+      "source": {
+        "label": "DS 124/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 124.26.md"
+      },
+      "target": {
+        "label": "Reverendíssimo Primus Fundatoris",
+        "kind": "titulo"
+      },
+      "scope": "denominação",
+      "basis": "DS 124/2026, art. 21",
+      "summary": "Substitui definitivamente a denominação por Grão-Régio Fundador, preservando usos históricos.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0029",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "Súmula 40 do STE",
+        "kind": "documento",
+        "itemId": "sumula:40"
+      },
+      "target": {
+        "label": "DS 101/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 101.26.md"
+      },
+      "scope": "arts. 1º–5º e parágrafos",
+      "basis": "Súmula 40",
+      "summary": "Reconhece revogação tácita dos arts. 1º a 5º.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0030",
+      "year": "2026",
+      "code": "ALT",
+      "source": {
+        "label": "DS 108/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 108.26.md"
+      },
+      "target": {
+        "label": "DS 101/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 101.26.md"
+      },
+      "scope": "regime partidário",
+      "basis": "DS 108/2026",
+      "summary": "Supera o caráter de partido único e institui abertura multipartidária.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0031",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "DS 120/2026 — Emenda nº 01",
+        "kind": "subato",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      },
+      "target": {
+        "label": "Código Civil",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código Civil.md"
+      },
+      "scope": "arts. 54–58",
+      "basis": "Emenda nº 01 ao DS 120/2026, art. 2º",
+      "summary": "Revoga as disposições que admitem ou disciplinam o divórcio.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0032",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "DS 120/2026 — Emenda nº 01",
+        "kind": "subato",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      },
+      "target": {
+        "label": "DS 95/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 95.26.md"
+      },
+      "scope": "art. 4º / art. 56-A",
+      "basis": "Emenda nº 01 ao DS 120/2026",
+      "summary": "Revoga o regime de flexibilização dos limites ao divórcio.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0033",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "DS 120/2026 — Emenda nº 01",
+        "kind": "subato",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      },
+      "target": {
+        "label": "DS 87C/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 87C.26.md"
+      },
+      "scope": "arts. 37–40",
+      "basis": "Emenda nº 01 ao DS 120/2026",
+      "summary": "Revoga ou derroga a disciplina de divórcio do antigo Estatuto da Nobreza.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0034",
+      "year": "2026",
+      "code": "SUP",
+      "source": {
+        "label": "DS 120/2026 — Emenda nº 01",
+        "kind": "subato",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 120.26.md"
+      },
+      "target": {
+        "label": "STE AIC 004/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Ministério da Justiça/STE/Autos/STE AIC 004.26.md"
+      },
+      "scope": "precedentes sobre divórcio",
+      "basis": "Emenda nº 01 ao DS 120/2026",
+      "summary": "Supera normativamente o precedente quanto ao regime material do divórcio.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0035",
+      "year": "2026",
+      "code": "REV",
+      "source": {
+        "label": "DS 110/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 110.26.md"
+      },
+      "target": {
+        "label": "Constituição anterior",
+        "kind": "documento",
+        "path": "Direito Eutímico/Arquivo - Inativos/Constituição/Constituição.md"
+      },
+      "scope": "integral",
+      "basis": "DS 110/2026, arts. 2º e 25",
+      "summary": "Revoga integralmente a Constituição anterior.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0036",
+      "year": "2026",
+      "code": "SUP",
+      "source": {
+        "label": "DS 110/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 110.26.md"
+      },
+      "target": {
+        "label": "DS 76/2025",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 76.25.md"
+      },
+      "scope": "referências à antiga ordem constitucional",
+      "basis": "DS 110/2026",
+      "summary": "Supera as referências incompatíveis à antiga Constituição e estrutura constitucional.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0037",
+      "year": "2026",
+      "code": "REN",
+      "source": {
+        "label": "DS 124/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 124.26.md"
+      },
+      "target": {
+        "label": "Código Eleitoral atual",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código Eleitoral.md"
+      },
+      "scope": "art. 36, III — terminologia nobiliárquica",
+      "basis": "DS 124/2026, art. 21",
+      "summary": "A denominação Reverendíssimos Primus Fundadores deve ser lida conforme a substituição por Grão-Régios Fundadores.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0038",
+      "year": "2026",
+      "code": "SUP",
+      "source": {
+        "label": "DS 110/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 110.26.md"
+      },
+      "target": {
+        "label": "Código Eleitoral atual",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código Eleitoral.md"
+      },
+      "scope": "art. 13, §1º, VI — referência à Constituição anterior",
+      "basis": "DS 110/2026",
+      "summary": "A referência genérica à Constituição não pode operar como fundamento isolado da antiga ordem.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0039",
+      "year": "2026",
+      "code": "CIT",
+      "source": {
+        "label": "Código Eleitoral atual",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código Eleitoral.md"
+      },
+      "target": {
+        "label": "DS 121/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Decretos Sapienciais/DS 121.26.md"
+      },
+      "scope": "art. 29 — sistema de contagem",
+      "basis": "Código Eleitoral, art. 29",
+      "summary": "Remete ao DS 121/2026 para o cálculo do resultado eleitoral.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0040",
+      "year": "2026",
+      "code": "CIT",
+      "source": {
+        "label": "Código Eleitoral atual",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código Eleitoral.md"
+      },
+      "target": {
+        "label": "Código de Processo Eutímico",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código de Processo Eutímico.md"
+      },
+      "scope": "art. 44, II",
+      "basis": "Código Eleitoral, art. 44",
+      "summary": "Determina aplicação subsidiária do Código de Processo Eutímico.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0041",
+      "year": "2026",
+      "code": "CIT",
+      "source": {
+        "label": "Código Eleitoral atual",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código Eleitoral.md"
+      },
+      "target": {
+        "label": "Código da Edição do Professor",
+        "kind": "documento",
+        "path": "Direito Eutímico/Códigos/Código da Edição do Professor.md"
+      },
+      "scope": "art. 5º",
+      "basis": "Código Eleitoral, art. 5º",
+      "summary": "Remete aos princípios do Código da Edição do Professor.",
+      "confidence": "alta"
+    },
+    {
+      "id": "REL-0042",
+      "year": "2026",
+      "code": "PRE",
+      "source": {
+        "label": "AI 020/2026",
+        "kind": "documento",
+        "path": "Direito Eutímico/Atos Institucionais/AI 020.26.md"
+      },
+      "target": {
+        "label": "Repositório de Direito Eutímico",
+        "kind": "repositorio"
+      },
+      "scope": "fonte oficial",
+      "basis": "AI 020/2026, arts. 1º–4º",
+      "summary": "Institui o repositório oficial e estabelece a prevalência dos textos dos Códigos nele constantes sobre publicações em canais do servidor.",
+      "confidence": "alta"
+    }
+  ],
+  "notes": [
+    "Relações de mera citação podem também ser extraídas dinamicamente do texto aberto.",
+    "Relações ambíguas usam código REV? e não produzem consolidação automática.",
+    "Subatos, como Emendas internas a um DS, conservam o path do documento-mãe e rótulo próprio."
+  ]
+}

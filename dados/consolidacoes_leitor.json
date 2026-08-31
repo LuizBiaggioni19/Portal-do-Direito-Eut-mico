@@ -1,0 +1,174 @@
+{
+  "versao": "1.0",
+  "commit_revisado": "e9d8096292643a5fd46829bfc1accb8fc33b0665",
+  "observacao": "Mapa editorial para o leitor interno. Não altera os textos originais.",
+  "documentos": {
+    "Direito Eutímico/Códigos/Código Civil.md": {
+      "operacoes": [
+        {
+          "tipo": "REVOGADO",
+          "artigos": [
+            "54",
+            "55",
+            "56",
+            "57",
+            "58"
+          ],
+          "fundamento": "Emenda nº 01 ao DS 120/2026, art. 2º",
+          "nota": "Dispositivos sobre divórcio revogados em 24/08/2026."
+        }
+      ]
+    },
+    "Direito Eutímico/Decretos Sapienciais/DS 95.26.md": {
+      "operacoes": [
+        {
+          "tipo": "REVOGADO",
+          "artigos": [
+            "4"
+          ],
+          "fundamento": "Emenda nº 01 ao DS 120/2026, art. 2º",
+          "nota": "O regime de relativização dos limites ao divórcio foi superado pela vedação posterior."
+        }
+      ]
+    },
+    "Direito Eutímico/Decretos Sapienciais/DS 101.26.md": {
+      "operacoes": [
+        {
+          "tipo": "REVOGADO",
+          "artigos": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "fundamento": "Súmula 40 do STE",
+          "nota": "Arts. 1º a 5º e respectivos parágrafos tacitamente revogados."
+        },
+        {
+          "tipo": "REVOGADO",
+          "artigos": [
+            "8"
+          ],
+          "fundamento": "DS 108/2026",
+          "nota": "A proibição de outros partidos foi superada pela abertura multipartidária."
+        },
+        {
+          "tipo": "ALTERADO",
+          "artigos": [
+            "6"
+          ],
+          "fundamento": "DS 108/2026",
+          "nota": "O PPE permanece existente, mas sem caráter de partido único."
+        },
+        {
+          "tipo": "INTERPRETADO",
+          "artigos": [
+            "7"
+          ],
+          "fundamento": "Súmula 45 do STE",
+          "nota": "A filiação partidária não pode ser exigida para votar ou ser votado."
+        }
+      ]
+    },
+    "Direito Eutímico/Decretos Sapienciais/DS 87C.26.md": {
+      "operacoes": [
+        {
+          "tipo": "REVOGADO",
+          "artigos": [
+            "37",
+            "38"
+          ],
+          "fundamento": "Emenda nº 01 ao DS 120/2026, art. 2º",
+          "nota": "Dispositivos que admitiam ou disciplinavam divórcio revogados."
+        },
+        {
+          "tipo": "DERROGADO",
+          "artigos": [
+            "39",
+            "40"
+          ],
+          "fundamento": "Emenda nº 01 ao DS 120/2026, art. 2º",
+          "nota": "Revogadas apenas as referências autônomas ao divórcio; demais matérias do dispositivo são preservadas."
+        },
+        {
+          "tipo": "SUPERADO",
+          "artigos": [
+            "5",
+            "7",
+            "18"
+          ],
+          "fundamento": "DS 124/2026",
+          "nota": "A antiga ordem de precedência nobiliárquica foi substituída pelo novo Estatuto da Nobreza."
+        }
+      ]
+    },
+    "Direito Eutímico/Atos Institucionais/AI 012.26.md": {
+      "operacoes": [
+        {
+          "tipo": "SUPERADO",
+          "artigos": [
+            "7"
+          ],
+          "fundamento": "AI 015/2026, art. 1º",
+          "nota": "Os Tribunais de Justiça provinciais foram extintos e a competência concentrada nos TRFs."
+        },
+        {
+          "tipo": "EXAURIDO",
+          "artigos": [
+            "14"
+          ],
+          "fundamento": "Publicação do Código de Processo Eutímico em 24/08/2026",
+          "nota": "Regra transitória exaurida com a publicação do novo CPE."
+        },
+        {
+          "tipo": "ALTERADO",
+          "artigos": [
+            "1",
+            "10"
+          ],
+          "fundamento": "AI 015/2026",
+          "nota": "As referências aos Tribunais de Justiça devem ser lidas conforme a extinção superveniente."
+        }
+      ]
+    },
+    "Direito Eutímico/Atos Institucionais/AI 013.26.md": {
+      "operacoes": [
+        {
+          "tipo": "SUPERADO",
+          "artigos": [
+            "2"
+          ],
+          "fundamento": "AI 015/2026, art. 1º",
+          "nota": "O inciso relativo aos Juízes Provinciais vinculados aos Tribunais de Justiça perdeu objeto."
+        }
+      ]
+    },
+    "Direito Eutímico/Atos Institucionais/AI 015.26.md": {
+      "operacoes": [
+        {
+          "tipo": "EXAURIDO",
+          "artigos": [
+            "8"
+          ],
+          "fundamento": "Publicação do Código de Processo Eutímico em 24/08/2026",
+          "nota": "Disposição transitória exaurida."
+        }
+      ]
+    },
+    "Direito Eutímico/Decretos Sapienciais/DS 76.25.md": {
+      "operacoes": [
+        {
+          "tipo": "SUPERADO",
+          "artigos": [
+            "1",
+            "5",
+            "6"
+          ],
+          "fundamento": "DS 110/2026",
+          "nota": "As referências incompatíveis à antiga Constituição e à antiga estrutura constitucional não representam o direito vigente."
+        }
+      ]
+    }
+  }
+}
