@@ -1,0 +1,27 @@
+{
+  "versao": "1.0",
+  "fonte": "dragaodotradicionalismo/Direito-Eutimico",
+  "atualizacoes": [
+    {
+      "data_utc": "2026-08-31T12:38:16.920602+00:00",
+      "base_anterior": "e9d8096292643a5fd46829bfc1accb8fc33b0665",
+      "head_atual": "79f8ab2abd0fccb150fa307692822d0837224b96",
+      "contagens": {
+        "total": 226,
+        "md": 223,
+        "pdf": 3,
+        "ds_active": 66,
+        "ds_revoked": 60,
+        "ai": 20,
+        "dd": 21,
+        "codes_active": 5
+      },
+      "mudancas": [
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/STE/Autos/STE 002.26.md\""
+        }
+      ]
+    }
+  ]
+}

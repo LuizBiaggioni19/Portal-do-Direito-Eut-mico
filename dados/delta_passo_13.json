@@ -18,5 +18,18 @@
       "resumo": "Código Eleitoral republicado no acervo ativo em 30/08/2026."
     }
   ],
-  "nota": "O leitor é dinâmico e carrega o HEAD atual. O Livro de Alterações permanece com o commit-base próprio e o Portal informa quando houver divergência."
+  "nota": "O leitor é dinâmico e carrega o HEAD atual. O Livro de Alterações permanece com o commit-base próprio e o Portal informa quando houver divergência.",
+  "head_atual": "79f8ab2abd0fccb150fa307692822d0837224b96",
+  "ultima_sincronizacao_automatica": {
+    "base_anterior": "e9d8096292643a5fd46829bfc1accb8fc33b0665",
+    "head_atual": "79f8ab2abd0fccb150fa307692822d0837224b96",
+    "data_utc": "2026-08-31T12:38:16.920602+00:00",
+    "alteracoes_detectadas": [
+      {
+        "tipo": "adicionado",
+        "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/STE/Autos/STE 002.26.md\""
+      }
+    ],
+    "nota": "Delta tecnico automatico. Nao produz, por si so, efeito juridico ou consolidacao."
+  }
 }
