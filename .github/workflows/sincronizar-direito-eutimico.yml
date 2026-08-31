@@ -1,0 +1,269 @@
+name: Sincronizar Portal com Direito Eutimico
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sincronizar-direito-eutimico
+  cancel-in-progress: false
+
+jobs:
+  sincronizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar Portal
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ler commit-base atual
+        id: marco
+        shell: bash
+        run: |
+          BASE_SHA="$(python -c 'import json; print(json.load(open("dados/ultima_indexacao.json", encoding="utf-8")).get("commit",""))')"
+          echo "base=$BASE_SHA" >> "$GITHUB_OUTPUT"
+          echo "Commit-base atual: $BASE_SHA"
+
+      - name: Clonar repositorio juridico oficial
+        shell: bash
+        run: |
+          git clone --depth 1 https://github.com/dragaodotradicionalismo/Direito-Eutimico.git /tmp/direito-eutimico
+
+      - name: Ler HEAD juridico
+        id: fonte
+        shell: bash
+        run: |
+          HEAD_SHA="$(git -C /tmp/direito-eutimico rev-parse HEAD)"
+          echo "head=$HEAD_SHA" >> "$GITHUB_OUTPUT"
+          echo "HEAD juridico atual: $HEAD_SHA"
+
+      - name: Verificar atualizacao
+        id: verificar
+        shell: bash
+        env:
+          BASE_SHA: ${{ steps.marco.outputs.base }}
+          HEAD_SHA: ${{ steps.fonte.outputs.head }}
+        run: |
+          if [ "$BASE_SHA" = "$HEAD_SHA" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Portal ja esta sincronizado."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Atualizacao detectada: $BASE_SHA -> $HEAD_SHA"
+          fi
+
+      - name: Obter delta
+        if: steps.verificar.outputs.changed == 'true'
+        shell: bash
+        env:
+          BASE_SHA: ${{ steps.marco.outputs.base }}
+          HEAD_SHA: ${{ steps.fonte.outputs.head }}
+        run: |
+          mkdir -p /tmp/sync
+          git -C /tmp/direito-eutimico fetch --depth=1 origin "$BASE_SHA" || true
+
+          if git -C /tmp/direito-eutimico cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
+            git -C /tmp/direito-eutimico diff --name-status "$BASE_SHA" "$HEAD_SHA" -- "Direito Eutímico" > /tmp/sync/delta.txt
+          else
+            echo "BASE_INDISPONIVEL" > /tmp/sync/delta.txt
+          fi
+
+          cat /tmp/sync/delta.txt
+
+      - name: Atualizar dados do Portal
+        if: steps.verificar.outputs.changed == 'true'
+        shell: bash
+        env:
+          BASE_SHA: ${{ steps.marco.outputs.base }}
+          HEAD_SHA: ${{ steps.fonte.outputs.head }}
+        run: |
+          python - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          from datetime import datetime, timezone
+
+          fonte = Path("/tmp/direito-eutimico")
+          root = fonte / "Direito Eutímico"
+          base_sha = os.environ["BASE_SHA"]
+          head_sha = os.environ["HEAD_SHA"]
+          agora = datetime.now(timezone.utc).isoformat()
+
+          files = [p for p in root.rglob("*") if p.is_file()]
+          def rel(p): return p.relative_to(fonte).as_posix()
+
+          contagens = {
+              "total": len(files),
+              "md": sum(p.suffix.lower() == ".md" for p in files),
+              "pdf": sum(p.suffix.lower() == ".pdf" for p in files),
+              "ds_active": sum(
+                  p.suffix.lower() == ".md"
+                  and rel(p).startswith("Direito Eutímico/Decretos Sapienciais/")
+                  and "/Revogados/" not in rel(p)
+                  for p in files
+              ),
+              "ds_revoked": sum(
+                  p.suffix.lower() == ".md"
+                  and "/Decretos Sapienciais/Revogados/" in rel(p)
+                  for p in files
+              ),
+              "ai": sum(
+                  p.suffix.lower() == ".md"
+                  and rel(p).startswith("Direito Eutímico/Atos Institucionais/")
+                  for p in files
+              ),
+              "dd": sum(
+                  p.suffix.lower() == ".md"
+                  and rel(p).startswith("Direito Eutímico/Decretos Deliciais/")
+                  for p in files
+              ),
+              "codes_active": sum(
+                  p.suffix.lower() == ".md"
+                  and rel(p).startswith("Direito Eutímico/Códigos/")
+                  for p in files
+              ),
+          }
+
+          delta_path = Path("/tmp/sync/delta.txt")
+          mudancas = []
+          mapa = {"A":"adicionado","M":"modificado","D":"removido","R":"renomeado","C":"copiado","T":"tipo_alterado"}
+
+          if delta_path.exists():
+              for linha in delta_path.read_text(encoding="utf-8").splitlines():
+                  if not linha.strip() or linha.strip() == "BASE_INDISPONIVEL":
+                      continue
+                  partes = linha.split("\t")
+                  codigo = partes[0][0]
+                  if codigo in {"R","C"} and len(partes) >= 3:
+                      mudancas.append({"tipo": mapa.get(codigo,codigo), "origem": partes[1], "path": partes[2]})
+                  elif len(partes) >= 2:
+                      mudancas.append({"tipo": mapa.get(codigo,codigo), "path": partes[1]})
+
+          p = Path("dados/ultima_indexacao.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          data["commit"] = head_sha
+          data["data"] = agora[:10]
+          data["contagens"] = contagens
+          data["ultima_atualizacao_automatica"] = {
+              "base_anterior": base_sha,
+              "head_atual": head_sha,
+              "data_utc": agora,
+              "mudancas": len(mudancas)
+          }
+          p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          p = Path("dados/portal_manifest.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          data["commit_build"] = head_sha
+          data["ultima_atualizacao"] = {
+              "base_anterior": base_sha,
+              "commit": head_sha,
+              "data_utc": agora,
+              "arquivos_alterados": len(mudancas)
+          }
+          p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          p = Path("dados/delta_passo_13.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          data["head_atual"] = head_sha
+          data["ultima_sincronizacao_automatica"] = {
+              "base_anterior": base_sha,
+              "head_atual": head_sha,
+              "data_utc": agora,
+              "alteracoes_detectadas": mudancas,
+              "nota": "Delta tecnico automatico. Nao produz, por si so, efeito juridico ou consolidacao."
+          }
+          p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          hist_path = Path("dados/relatorio_atualizacoes_automaticas.json")
+          if hist_path.exists():
+              hist = json.loads(hist_path.read_text(encoding="utf-8"))
+          else:
+              hist = {"versao":"1.0","fonte":"dragaodotradicionalismo/Direito-Eutimico","atualizacoes":[]}
+
+          hist["atualizacoes"].append({
+              "data_utc": agora,
+              "base_anterior": base_sha,
+              "head_atual": head_sha,
+              "contagens": contagens,
+              "mudancas": mudancas
+          })
+          hist["atualizacoes"] = hist["atualizacoes"][-100:]
+          hist_path.write_text(json.dumps(hist, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          p = Path("portal.js")
+          js = p.read_text(encoding="utf-8")
+          js = re.sub(r'buildHead:\s*"[0-9a-f]{40}"', f'buildHead: "{head_sha}"', js, count=1)
+          js = re.sub(r'cacheKey:\s*"portal-eutimico-tree-v15[^"]*"', f'cacheKey: "portal-eutimico-tree-v15-{head_sha[:10]}"', js, count=1)
+          p.write_text(js, encoding="utf-8")
+
+          linhas = [
+              "# RELATORIO AUTOMATICO DE ATUALIZACAO",
+              "",
+              f"- Base anterior: `{base_sha}`",
+              f"- HEAD atual: `{head_sha}`",
+              f"- Data UTC: `{agora}`",
+              "",
+              "## Alteracoes detectadas",
+              ""
+          ]
+          if mudancas:
+              for m in mudancas:
+                  if "origem" in m:
+                      linhas.append(f"- **{m['tipo']}** — `{m['origem']}` -> `{m['path']}`")
+                  else:
+                      linhas.append(f"- **{m['tipo']}** — `{m['path']}`")
+          else:
+              linhas.append("- Nenhum path individualizado.")
+
+          linhas += [
+              "",
+              "## Nota",
+              "",
+              "Este relatorio e tecnico. A sincronizacao automatica nao declara revogacao, consolidacao, inconstitucionalidade ou outra conclusao juridica."
+          ]
+          Path("RELATORIO_ULTIMA_ATUALIZACAO_AUTOMATICA.md").write_text("\n".join(linhas) + "\n", encoding="utf-8")
+          PY
+
+      - name: Validar arquivos
+        if: steps.verificar.outputs.changed == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for p in Path("dados").glob("*.json"):
+              json.loads(p.read_text(encoding="utf-8"))
+              print("JSON OK:", p)
+          PY
+          node --check portal.js
+
+      - name: Commitar no Portal
+        if: steps.verificar.outputs.changed == 'true'
+        shell: bash
+        env:
+          HEAD_SHA: ${{ steps.fonte.outputs.head }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            dados/ultima_indexacao.json \
+            dados/portal_manifest.json \
+            dados/delta_passo_13.json \
+            dados/relatorio_atualizacoes_automaticas.json \
+            RELATORIO_ULTIMA_ATUALIZACAO_AUTOMATICA.md \
+            portal.js
+
+          if git diff --cached --quiet; then
+            echo "Nada para commitar."
+            exit 0
+          fi
+
+          git commit -m "Sincroniza Portal com Direito-Eutimico ${HEAD_SHA:0:10}"
+          git push origin HEAD:main
