@@ -4,8 +4,8 @@ const CONFIG = {
   repo: "Direito-Eutimico",
   branch: "main",
   root: "Direito Eutímico",
-  cacheKey: "portal-eutimico-tree-v15-0c54181821",
-  buildHead: "0c541818214cb4ea312d3644075aa8746082285c",
+  cacheKey: "portal-eutimico-tree-v15-e97e9a9da8",
+  buildHead: "e97e9a9da8d9c1f72192e5d2091915e6d6fbd06e",
   lastIndexedKey: "portal-eutimico-last-indexed-head"
 };
 

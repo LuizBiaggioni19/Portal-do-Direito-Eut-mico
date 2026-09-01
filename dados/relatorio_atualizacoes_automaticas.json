@@ -96,6 +96,31 @@
           "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TRF-3/Autos/TRF-3 HC 001.26.md\""
         }
       ]
+    },
+    {
+      "data_utc": "2026-09-01T03:27:30.937228+00:00",
+      "base_anterior": "0c541818214cb4ea312d3644075aa8746082285c",
+      "head_atual": "e97e9a9da8d9c1f72192e5d2091915e6d6fbd06e",
+      "contagens": {
+        "total": 233,
+        "md": 230,
+        "pdf": 3,
+        "ds_active": 69,
+        "ds_revoked": 60,
+        "ai": 20,
+        "dd": 24,
+        "codes_active": 5
+      },
+      "mudancas": [
+        {
+          "tipo": "modificado",
+          "path": "\"Direito Eut\\303\\255mico/Atos Institucionais/AI 020.26.md\""
+        },
+        {
+          "tipo": "modificado",
+          "path": "\"Direito Eut\\303\\255mico/C\\303\\263digos/C\\303\\263digo de Processo Eut\\303\\255mico.md\""
+        }
+      ]
     }
   ]
 }
