@@ -1,0 +1,130 @@
+/* Portal do Direito Eutímico — Busca Jurídica V2
+   Complemento visual. Não substitui portal.css.
+*/
+.search-v2-box{
+  display:grid;
+  gap:10px;
+}
+.search-v2-heading strong{
+  display:block;
+  color:var(--navy);
+  font:700 19px Georgia,"Times New Roman",serif;
+}
+.search-v2-heading span{
+  display:block;
+  margin-top:3px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.35;
+}
+.search-v2-row{
+  display:flex;
+  align-items:stretch;
+}
+.search-v2-row input{
+  width:100%;
+  min-width:0;
+  border:1px solid #CFC5B4;
+  border-right:0;
+  border-radius:7px 0 0 7px;
+  padding:12px 11px;
+  background:#fff;
+  color:var(--ink);
+}
+.search-v2-row input::placeholder{color:#8A847A}
+.search-v2-row button{
+  border:1px solid var(--wine);
+  background:var(--wine);
+  color:#fff;
+  padding:0 13px;
+  border-radius:0 7px 7px 0;
+  font-size:12px;
+  font-weight:800;
+}
+.search-v2-scopes{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+}
+.search-v2-scopes button{
+  border:1px solid var(--border);
+  background:var(--ivory);
+  color:var(--navy);
+  border-radius:999px;
+  padding:5px 8px;
+  font-size:10px;
+  font-weight:800;
+}
+.search-v2-scopes button:hover{
+  border-color:var(--gold);
+}
+.search-v2-scopes button.active{
+  background:var(--navy);
+  border-color:var(--navy);
+  color:#fff;
+}
+.search-v2-advanced{
+  width:100%;
+  border:0;
+  border-top:1px solid #EEE8DD;
+  background:transparent;
+  color:var(--wine);
+  padding:9px 0 1px;
+  text-align:left;
+  font-size:11px;
+  font-weight:800;
+}
+.search-v2-legacy{
+  margin-top:14px;
+  border-top:1px solid var(--border);
+  padding-top:12px;
+}
+.search-v2-legacy.hidden{display:none!important}
+
+.v2-group-title{
+  margin:6px 0 8px;
+  color:var(--wine);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.v2-group-title.v2-other{
+  margin-top:18px;
+}
+.search-v2-result.is-principal{
+  border-color:var(--gold);
+  border-left:5px solid var(--wine);
+  box-shadow:0 7px 20px rgba(19,33,58,.07);
+}
+.v2-reason{
+  margin-top:4px;
+  color:#746A5E;
+  font-size:10px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.045em;
+}
+.v2-snippet{
+  margin-top:9px;
+  font-size:11px;
+  line-height:1.5;
+}
+.v2-snippet mark{
+  background:#FFE39A;
+  color:inherit;
+  padding:0 1px;
+}
+.search-v2-ready .sidebar .side-panel:first-child > h2{
+  margin-bottom:11px;
+}
+
+@media(max-width:720px){
+  .search-v2-scopes{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  .search-v2-scopes button{
+    border-radius:6px;
+  }
+}
