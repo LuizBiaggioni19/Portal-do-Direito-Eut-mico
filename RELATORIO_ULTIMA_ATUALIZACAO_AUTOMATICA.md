@@ -1,14 +1,15 @@
 # RELATORIO AUTOMATICO DE ATUALIZACAO
 
-- Base anterior: `e97e9a9da8d9c1f72192e5d2091915e6d6fbd06e`
-- HEAD atual: `b3c1be8fb8c2d10e315216ee0ab7f24268986f41`
-- Data UTC: `2026-09-01T04:26:31.181098+00:00`
+- Base anterior: `b3c1be8fb8c2d10e315216ee0ab7f24268986f41`
+- HEAD atual: `82a8b6db487a61679831c1316d53cd3c11fac5c9`
+- Data UTC: `2026-09-01T19:24:09.643937+00:00`
 
 ## Alteracoes detectadas
 
-- **modificado** — `"Direito Eut\303\255mico/Atos Institucionais/AI 020.26.md"`
-- **modificado** — `"Direito Eut\303\255mico/C\303\263digos/C\303\263digo de Processo Eut\303\255mico.md"`
-- **modificado** — `"Direito Eut\303\255mico/Minist\303\251rio da Justi\303\247a/STE/S\303\272mula da Jurisprud\303\252ncia.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Decretos Sapienciais/DS 128.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Decretos Sapienciais/DS 129.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Decretos Sapienciais/DS 130.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Minist\303\251rio da Justi\303\247a/STE/Autos/STE AIC 006.26.md"`
 
 ## Nota
 
