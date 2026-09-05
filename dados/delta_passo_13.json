@@ -19,27 +19,47 @@
     }
   ],
   "nota": "O leitor é dinâmico e carrega o HEAD atual. O Livro de Alterações permanece com o commit-base próprio e o Portal informa quando houver divergência.",
-  "head_atual": "82a8b6db487a61679831c1316d53cd3c11fac5c9",
+  "head_atual": "bc3ccb85373cf039755842bca1035e338084d264",
   "ultima_sincronizacao_automatica": {
-    "base_anterior": "b3c1be8fb8c2d10e315216ee0ab7f24268986f41",
-    "head_atual": "82a8b6db487a61679831c1316d53cd3c11fac5c9",
-    "data_utc": "2026-09-01T19:24:09.643937+00:00",
+    "base_anterior": "82a8b6db487a61679831c1316d53cd3c11fac5c9",
+    "head_atual": "bc3ccb85373cf039755842bca1035e338084d264",
+    "data_utc": "2026-09-05T14:24:16.241298+00:00",
     "alteracoes_detectadas": [
       {
         "tipo": "adicionado",
-        "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 128.26.md\""
+        "path": "\"Direito Eut\\303\\255mico/Decretos Deliciais/DEL 025.26.md\""
       },
       {
         "tipo": "adicionado",
-        "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 129.26.md\""
+        "path": "\"Direito Eut\\303\\255mico/Decretos Deliciais/DEL 026.26.md\""
       },
       {
         "tipo": "adicionado",
-        "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 130.26.md\""
+        "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 131.26.md\""
       },
       {
         "tipo": "adicionado",
+        "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 132A.26.md\""
+      },
+      {
+        "tipo": "adicionado",
+        "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 132B.26.md\""
+      },
+      {
+        "tipo": "modificado",
         "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/STE/Autos/STE AIC 006.26.md\""
+      },
+      {
+        "tipo": "adicionado",
+        "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Resolu\\303\\247\\303\\265es/TSE RES 001.26.md\""
+      },
+      {
+        "tipo": "adicionado",
+        "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Resolu\\303\\247\\303\\265es/TSE RES 002.26.md\""
+      },
+      {
+        "tipo": "adicionado",
+        "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Resolu\\303\\247\\303\\265es/TSE RES 003.26.md\""
       }
     ],
     "nota": "Delta tecnico automatico. Nao produz, por si so, efeito juridico ou consolidacao."

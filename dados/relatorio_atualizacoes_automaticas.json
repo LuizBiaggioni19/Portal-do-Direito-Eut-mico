@@ -183,6 +183,59 @@
           "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/STE/Autos/STE AIC 006.26.md\""
         }
       ]
+    },
+    {
+      "data_utc": "2026-09-05T14:24:16.241298+00:00",
+      "base_anterior": "82a8b6db487a61679831c1316d53cd3c11fac5c9",
+      "head_atual": "bc3ccb85373cf039755842bca1035e338084d264",
+      "contagens": {
+        "total": 245,
+        "md": 242,
+        "pdf": 3,
+        "ds_active": 75,
+        "ds_revoked": 60,
+        "ai": 20,
+        "dd": 26,
+        "codes_active": 5
+      },
+      "mudancas": [
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Deliciais/DEL 025.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Deliciais/DEL 026.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 131.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 132A.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 132B.26.md\""
+        },
+        {
+          "tipo": "modificado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/STE/Autos/STE AIC 006.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Resolu\\303\\247\\303\\265es/TSE RES 001.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Resolu\\303\\247\\303\\265es/TSE RES 002.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Resolu\\303\\247\\303\\265es/TSE RES 003.26.md\""
+        }
+      ]
     }
   ]
 }

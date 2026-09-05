@@ -4,7 +4,7 @@
   "fase": "versao_candidata_publicacao",
   "repository": "dragaodotradicionalismo/Direito-Eutimico",
   "branch": "main",
-  "commit_build": "82a8b6db487a61679831c1316d53cd3c11fac5c9",
+  "commit_build": "bc3ccb85373cf039755842bca1035e338084d264",
   "recursos": {
     "busca_avancada": true,
     "busca_texto_integral_sob_demanda": true,
@@ -33,9 +33,9 @@
     "consulta_relacional": true
   },
   "ultima_atualizacao": {
-    "base_anterior": "b3c1be8fb8c2d10e315216ee0ab7f24268986f41",
-    "commit": "82a8b6db487a61679831c1316d53cd3c11fac5c9",
-    "data_utc": "2026-09-01T19:24:09.643937+00:00",
-    "arquivos_alterados": 4
+    "base_anterior": "82a8b6db487a61679831c1316d53cd3c11fac5c9",
+    "commit": "bc3ccb85373cf039755842bca1035e338084d264",
+    "data_utc": "2026-09-05T14:24:16.241298+00:00",
+    "arquivos_alterados": 9
   }
 }

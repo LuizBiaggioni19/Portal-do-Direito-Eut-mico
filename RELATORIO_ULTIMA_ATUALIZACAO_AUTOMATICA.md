@@ -1,15 +1,20 @@
 # RELATORIO AUTOMATICO DE ATUALIZACAO
 
-- Base anterior: `b3c1be8fb8c2d10e315216ee0ab7f24268986f41`
-- HEAD atual: `82a8b6db487a61679831c1316d53cd3c11fac5c9`
-- Data UTC: `2026-09-01T19:24:09.643937+00:00`
+- Base anterior: `82a8b6db487a61679831c1316d53cd3c11fac5c9`
+- HEAD atual: `bc3ccb85373cf039755842bca1035e338084d264`
+- Data UTC: `2026-09-05T14:24:16.241298+00:00`
 
 ## Alteracoes detectadas
 
-- **adicionado** — `"Direito Eut\303\255mico/Decretos Sapienciais/DS 128.26.md"`
-- **adicionado** — `"Direito Eut\303\255mico/Decretos Sapienciais/DS 129.26.md"`
-- **adicionado** — `"Direito Eut\303\255mico/Decretos Sapienciais/DS 130.26.md"`
-- **adicionado** — `"Direito Eut\303\255mico/Minist\303\251rio da Justi\303\247a/STE/Autos/STE AIC 006.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Decretos Deliciais/DEL 025.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Decretos Deliciais/DEL 026.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Decretos Sapienciais/DS 131.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Decretos Sapienciais/DS 132A.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Decretos Sapienciais/DS 132B.26.md"`
+- **modificado** — `"Direito Eut\303\255mico/Minist\303\251rio da Justi\303\247a/STE/Autos/STE AIC 006.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Minist\303\251rio da Justi\303\247a/TSE/Resolu\303\247\303\265es/TSE RES 001.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Minist\303\251rio da Justi\303\247a/TSE/Resolu\303\247\303\265es/TSE RES 002.26.md"`
+- **adicionado** — `"Direito Eut\303\255mico/Minist\303\251rio da Justi\303\247a/TSE/Resolu\303\247\303\265es/TSE RES 003.26.md"`
 
 ## Nota
 
