@@ -236,6 +236,59 @@
           "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Resolu\\303\\247\\303\\265es/TSE RES 003.26.md\""
         }
       ]
+    },
+    {
+      "data_utc": "2026-09-06T03:26:06.544009+00:00",
+      "base_anterior": "bc3ccb85373cf039755842bca1035e338084d264",
+      "head_atual": "268821add0049726d200e136a85a1c2c834e8296",
+      "contagens": {
+        "total": 253,
+        "md": 250,
+        "pdf": 3,
+        "ds_active": 78,
+        "ds_revoked": 60,
+        "ai": 20,
+        "dd": 29,
+        "codes_active": 5
+      },
+      "mudancas": [
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Deliciais/DEL 027.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Deliciais/DEL 028.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Deliciais/DEL 029.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 133.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 134.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 135.26.md\""
+        },
+        {
+          "tipo": "modificado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/STE/S\\303\\272mula da Jurisprud\\303\\252ncia.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Resolu\\303\\247\\303\\265es/TSE RES 004.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Resolu\\303\\247\\303\\265es/TSE RES 005.26.md\""
+        }
+      ]
     }
   ]
 }
