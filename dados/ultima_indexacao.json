@@ -3,12 +3,12 @@
   "data": "2026-09-06",
   "repository": "dragaodotradicionalismo/Direito-Eutimico",
   "branch": "main",
-  "commit": "268821add0049726d200e136a85a1c2c834e8296",
+  "commit": "4a4f3ff238843d802f998a467d12db994872ce74",
   "contagens": {
-    "total": 253,
-    "md": 250,
+    "total": 258,
+    "md": 255,
     "pdf": 3,
-    "ds_active": 78,
+    "ds_active": 81,
     "ds_revoked": 60,
     "ai": 20,
     "dd": 29,
@@ -20,9 +20,9 @@
     "O Livro de Alterações possui data-base própria e pode permanecer atrás do HEAD; a divergência é exibida."
   ],
   "ultima_atualizacao_automatica": {
-    "base_anterior": "bc3ccb85373cf039755842bca1035e338084d264",
-    "head_atual": "268821add0049726d200e136a85a1c2c834e8296",
-    "data_utc": "2026-09-06T03:26:06.544009+00:00",
-    "mudancas": 9
+    "base_anterior": "268821add0049726d200e136a85a1c2c834e8296",
+    "head_atual": "4a4f3ff238843d802f998a467d12db994872ce74",
+    "data_utc": "2026-09-06T04:26:11.990956+00:00",
+    "mudancas": 5
   }
 }
