@@ -365,6 +365,39 @@
           "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Autos/TSE 001.26/defesa_integral_mestriner_quezia_AE_001_2026.pdf\""
         }
       ]
+    },
+    {
+      "data_utc": "2026-09-17T20:27:21.526779+00:00",
+      "base_anterior": "c4526bc4ddf6a54433991d751a6070719aac3cae",
+      "head_atual": "4d80b1401e366723ab3e402a467edac069ad12a5",
+      "contagens": {
+        "total": 262,
+        "md": 259,
+        "pdf": 3,
+        "ds_active": 82,
+        "ds_revoked": 60,
+        "ai": 20,
+        "dd": 30,
+        "codes_active": 5
+      },
+      "mudancas": [
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Sapienciais/DS 139.26.md\""
+        },
+        {
+          "tipo": "modificado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/STE/Autos/STE HC 002.26.md\""
+        },
+        {
+          "tipo": "modificado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/STE/S\\303\\272mula da Jurisprud\\303\\252ncia.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TRF-2/Autos/TRF-2 001.26.md\""
+        }
+      ]
     }
   ]
 }
