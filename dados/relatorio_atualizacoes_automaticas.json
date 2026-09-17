@@ -326,6 +326,45 @@
           "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Certid\\303\\265es/TSE CERT 002.26.md\""
         }
       ]
+    },
+    {
+      "data_utc": "2026-09-17T19:25:00.058343+00:00",
+      "base_anterior": "4a4f3ff238843d802f998a467d12db994872ce74",
+      "head_atual": "c4526bc4ddf6a54433991d751a6070719aac3cae",
+      "contagens": {
+        "total": 260,
+        "md": 257,
+        "pdf": 3,
+        "ds_active": 81,
+        "ds_revoked": 60,
+        "ai": 20,
+        "dd": 30,
+        "codes_active": 5
+      },
+      "mudancas": [
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Decretos Deliciais/DEL 030.26.md\""
+        },
+        {
+          "tipo": "adicionado",
+          "path": "\"Direito Eut\\303\\255mico/Jornal do Quequ\\303\\251/Ed. 007.26.md\""
+        },
+        {
+          "tipo": "modificado",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/STE/S\\303\\272mula da Jurisprud\\303\\252ncia.md\""
+        },
+        {
+          "tipo": "renomeado",
+          "origem": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Autos/TSE AE 001.26/Acao_Eleitoral_Anulacao_Candidatura_Eutimia.pdf\"",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Autos/TSE 001.26/Acao_Eleitoral_Anulacao_Candidatura_Eutimia.pdf\""
+        },
+        {
+          "tipo": "renomeado",
+          "origem": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Autos/TSE AE 001.26/defesa_integral_mestriner_quezia_AE_001_2026.pdf\"",
+          "path": "\"Direito Eut\\303\\255mico/Minist\\303\\251rio da Justi\\303\\247a/TSE/Autos/TSE 001.26/defesa_integral_mestriner_quezia_AE_001_2026.pdf\""
+        }
+      ]
     }
   ]
 }
